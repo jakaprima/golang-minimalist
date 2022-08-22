@@ -4,7 +4,7 @@
 
 ## Notes
 
-* go init belajar
+* go mod init belajar
 * buat main.go
 * create scrypt
 

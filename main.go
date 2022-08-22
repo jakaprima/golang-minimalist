@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
 	for i := 0; i < 10; i++ {
 		if i%2 == 0 {
-			fmt.Println(i, "adalah Angka genap")
+			fmt.Println(i, " genap")
 		} else {
-			fmt.Println(i, "adalah Angka ganjil")
+			fmt.Println(i, " ganjil")
 		}
 
 	}
