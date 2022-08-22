@@ -3,6 +3,12 @@ package main
 import "fmt"
 
 func main() {
+	// ---------------------------- FUNCTION
+	sliceTutorial()
+	loopingTutorial()
+}
+
+func sliceTutorial() {
 	// ----------------------- SLICE
 	var students = []string{"Jaka", "Toni", "Hans", "Stevanus", "Edwin Nugroho", "Kevin Hugo", "Rizki Ramadhan", "Fajar Agus Maulana", "Iqbal Hamdani", "Fahmi Tajuddin"}
 	_ = students
@@ -10,7 +16,9 @@ func main() {
 		fmt.Println("orang ke: ", i+1)
 		fmt.Println("nama: ", data)
 	}
+}
 
+func loopingTutorial() {
 	// ------------------------ LOOP, Condition
 	for i := 0; i < 10; i++ {
 		if i%2 == 0 {
@@ -19,5 +27,4 @@ func main() {
 			fmt.Println(i, " ganjil")
 		}
 	}
-
 }
