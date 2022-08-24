@@ -8,6 +8,7 @@ func main() {
 	loopingTutorial()
 
 	// ---------------------------- CLOSURE (anonmous function) & pointer
+	fmt.Println("-------------------------------- CLOSURE POINTER")
 	var firstFunction = func(name_list []*string) []*string {
 		result := []*string{}
 		for _, data := range name_list {
@@ -23,9 +24,38 @@ func main() {
 	name_list := []*string{&jaka, &prima}
 	fmt.Println(firstFunction(name_list))
 
+	// --------------------------------- STRUCT
+	fmt.Println("-------------------------------- STRUCT")
+	type Manusia struct {
+		nama string
+		umur int
+	}
+
+	// var orang1 = Manusia{}
+	// orang1.nama = "jaka"
+	// orang1.umur = 10
+	// var orang2 = Manusia{}
+	// orang2.nama = "prima"
+	// orang2.umur = 20
+
+	var name_list_struct = []Manusia{
+		{nama: "jaka", umur: 20},
+		{nama: "prima", umur: 14},
+	}
+
+	fungsiDua := func(list_data []Manusia) {
+		// cetak data-data dari list
+		for _, data := range list_data {
+			fmt.Println("Nama Manusia: ", data.nama)
+			fmt.Println("Umur: ", data.umur)
+		}
+	}
+	fungsiDua(name_list_struct)
+
 }
 
 func sliceTutorial() {
+	fmt.Println("-------------------------------- SLICE")
 	// ----------------------- SLICE
 	var students = []string{"Jaka", "Toni", "Hans", "Stevanus", "Edwin Nugroho", "Kevin Hugo", "Rizki Ramadhan", "Fajar Agus Maulana", "Iqbal Hamdani", "Fahmi Tajuddin"}
 	_ = students
@@ -36,6 +66,7 @@ func sliceTutorial() {
 }
 
 func loopingTutorial() {
+	fmt.Println("-------------------------------- LOOP, CONDITION")
 	// ------------------------ LOOP, Condition
 	for i := 0; i < 10; i++ {
 		if i%2 == 0 {
