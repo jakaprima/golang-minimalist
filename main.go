@@ -38,12 +38,12 @@ func main() {
 	// orang2.nama = "prima"
 	// orang2.umur = 20
 
-	var name_list_struct = []Manusia{
+	var name_list_struct = []*Manusia{
 		{nama: "jaka", umur: 20},
 		{nama: "prima", umur: 14},
 	}
 
-	fungsiDua := func(list_data []Manusia) {
+	fungsiDua := func(list_data []*Manusia) {
 		// cetak data-data dari list
 		for _, data := range list_data {
 			fmt.Println("Nama Manusia: ", data.nama)
