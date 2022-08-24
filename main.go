@@ -6,6 +6,23 @@ func main() {
 	// ---------------------------- FUNCTION
 	sliceTutorial()
 	loopingTutorial()
+
+	// ---------------------------- CLOSURE (anonmous function) & pointer
+	var firstFunction = func(name_list []*string) []*string {
+		result := []*string{}
+		for _, data := range name_list {
+			fmt.Println(data)
+			result = append(result, data)
+		}
+		return result
+
+	}
+
+	jaka := "jaka"
+	prima := "prima"
+	name_list := []*string{&jaka, &prima}
+	fmt.Println(firstFunction(name_list))
+
 }
 
 func sliceTutorial() {
