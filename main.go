@@ -1,56 +1,111 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	// ---------------------------- FUNCTION
-	sliceTutorial()
-	loopingTutorial()
+	// argsWithProg := os.Args
+	// argsWithoutProg := os.Args[1:]
 
-	// ---------------------------- CLOSURE (anonmous function) & pointer
-	fmt.Println("-------------------------------- CLOSURE POINTER")
-	var firstFunction = func(name_list []*string) []*string {
-		result := []*string{}
-		for _, data := range name_list {
-			fmt.Println(data)
-			result = append(result, data)
-		}
-		return result
+	// argument1_int, err := strconv.ParseInt(os.Args[1], 10, 0)
+	// fmt.Printf("testt %d", argument1_int)
+	// fmt.Println(argument1_int, err, reflect.TypeOf(argument1_int))
 
-	}
+	fmt.Println("os.Args[1]", len(os.Args))
 
-	jaka := "jaka"
-	prima := "prima"
-	name_list := []*string{&jaka, &prima}
-	fmt.Println(firstFunction(name_list))
+	// panic("You can not divide a number by Zero")
+	// if err != nil {
+	// 	fmt.Println("First input parameter must be integer")
+	// 	os.Exit(1)
+	// }
 
-	// --------------------------------- STRUCT
-	fmt.Println("-------------------------------- STRUCT")
-	type Manusia struct {
-		nama string
-		umur int
-	}
+	// fmt.Printf("type of a is %T\n", argument1)
+	// fmt.Println("semua arg", argsWithProg)
+	// fmt.Println("ambil semua arg", argsWithoutProg)
+	// fmt.Println("get arg index ke 3", argument1)
 
-	// var orang1 = Manusia{}
-	// orang1.nama = "jaka"
-	// orang1.umur = 10
-	// var orang2 = Manusia{}
-	// orang2.nama = "prima"
-	// orang2.umur = 20
+	// var selected_index = argument1_int - 1
+	// fmt.Println("selected index", selected_index)
 
-	var name_list_struct = []*Manusia{
-		{nama: "jaka", umur: 20},
-		{nama: "prima", umur: 14},
-	}
+	// type Biodata struct {
+	// 	nama      string
+	// 	alamat    string 2
+	// 	pekerjaan string
+	// }
 
-	fungsiDua := func(list_data []*Manusia) {
-		// cetak data-data dari list
-		for _, data := range list_data {
-			fmt.Println("Nama Manusia: ", data.nama)
-			fmt.Println("Umur: ", data.umur)
-		}
-	}
-	fungsiDua(name_list_struct)
+	// biodata_list := []Biodata{
+	// 	{
+	// 		nama:      "jaka",
+	// 		alamat:    "perum 1",
+	// 		pekerjaan: "developer",
+	// 	},
+	// 	{
+	// 		nama:      "prima",
+	// 		alamat:    "perum 2",
+	// 		pekerjaan: "business man",
+	// 	},
+	// }
+
+	// // fungsiTiga := func(list_data []*Manusia) {
+	// // 	// cetak data-data dari list
+	// // 	for _, data := range list_data {
+	// // 		fmt.Println("Nama Manusia: ", data.nama)
+	// // 		fmt.Println("Umur: ", data.umur)
+	// // 	}
+	// // }
+	// // fungsiTiga(biodata_list)
+	// fmt.Println("Selected", biodata_list[selected_index])
+
+	// // ---------------------------- FUNCTION
+	// // sliceTutorial()
+	// // loopingTutorial()
+
+	// // // ---------------------------- CLOSURE (anonmous function) & pointer
+	// // fmt.Println("-------------------------------- CLOSURE POINTER")
+	// // var firstFunction = func(name_list []*string) []*string {
+	// // 	result := []*string{}
+	// // 	for _, data := range name_list {
+	// // 		fmt.Println(data)
+	// // 		result = append(result, data)
+	// // 	}
+	// // 	return result
+
+	// // }
+
+	// // jaka := "jaka"
+	// // prima := "prima"
+	// // name_list := []*string{&jaka, &prima}
+	// // fmt.Println(firstFunction(name_list))
+
+	// // // --------------------------------- STRUCT
+	// // fmt.Println("-------------------------------- STRUCT")
+	// // type Manusia struct {
+	// // 	nama string
+	// // 	umur int
+	// // }
+
+	// // // var orang1 = Manusia{}
+	// // // orang1.nama = "jaka"
+	// // // orang1.umur = 10
+	// // // var orang2 = Manusia{}
+	// // // orang2.nama = "prima"
+	// // // orang2.umur = 20
+
+	// // var name_list_struct = []*Manusia{
+	// // 	{nama: "jaka", umur: 20},
+	// // 	{nama: "prima", umur: 14},
+	// // }
+
+	// // fungsiDua := func(list_data []*Manusia) {
+	// // 	// cetak data-data dari list
+	// // 	for _, data := range list_data {
+	// // 		fmt.Println("Nama Manusia: ", data.nama)
+	// // 		fmt.Println("Umur: ", data.umur)
+	// // 	}
+	// // }
+	// // fungsiDua(name_list_struct)
 
 }
 
