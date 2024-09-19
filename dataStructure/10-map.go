@@ -1,9 +1,9 @@
-package main
+package dataStructure
 
 import "fmt"
 
-func main() {
-
+func RunMapExample() {
+	// map adalah object key value pairs 
 	m := make(map[string]int)
 
 	m["k1"] = 7

@@ -1,8 +1,8 @@
-package main
+package dataStructure
 
 import "fmt"
 
-func main() {
+func RunArrayExample() {
 
 	var a [5]int
 	fmt.Println("emp:", a)

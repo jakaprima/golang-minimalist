@@ -1,11 +1,11 @@
-package main
+package controlStructure
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func switchExample() {
 
 	i := 2
 	fmt.Print("Write ", i, " as ")

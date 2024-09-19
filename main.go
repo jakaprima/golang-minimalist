@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 	"os"
+	"golang-minimalist/functionPackage"
+	"golang-minimalist/dataStructure"
+	"golang-minimalist/concurency"
 )
 
 func main() {
@@ -28,6 +31,18 @@ func main() {
 
 	// var selected_index = argument1_int - 1
 	// fmt.Println("selected index", selected_index)
+
+
+	// functions and package
+	functionPackage.FunctionExample()
+
+	// struct
+	dataStructure.RunStructExample()
+
+	//concurency
+	concurency.GorountineExample()
+
+
 
 	// type Biodata struct {
 	// 	nama      string

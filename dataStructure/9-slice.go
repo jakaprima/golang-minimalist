@@ -1,8 +1,8 @@
-package main
+package dataStructure
 
 import "fmt"
 
-func main() {
+func RunSliceExample() {
 
 	s := make([]string, 3)
 	fmt.Println("emp:", s)

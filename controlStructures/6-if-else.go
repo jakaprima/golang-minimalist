@@ -1,8 +1,8 @@
-package main
+package controlStructure
 
 import "fmt"
 
-func main() {
+func ifElseExample() {
 
 	if 7%2 == 0 {
 		fmt.Println("7 is even")
